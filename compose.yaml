@@ -1,0 +1,17 @@
+﻿services:
+  physiotherapy.api:
+    build:
+      context: .
+      dockerfile: Physiotherapy.Api/Dockerfile
+    ports:
+      - 5000:8080
+  physiotherapy.ui:
+    build:
+      context: ./Physiotherapy.UI
+      dockerfile: Dockerfile
+      args:
+        VITE_API_ENDPOINT: http://localhost:5000/api
+    ports:
+      - 3000:80
+    
+

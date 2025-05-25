@@ -1,0 +1,6 @@
+﻿.idea
+.vs
+Physiotherapy.UnitTests/bin
+Physiotherapy.UnitTests/obj
+Physiotherapy.Api/obj
+Physiotherapy.Api/bin
